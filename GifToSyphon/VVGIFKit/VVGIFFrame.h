@@ -26,8 +26,8 @@
 
 @interface VVGIFFrame : NSObject	{
 	
-	NSBitmapImageRep	*imageRep;
-	CMTimeRange			timeRange;
+	NSBitmapImageRep *imageRep;
+	CMTimeRange timeRange;
 	
 }
 

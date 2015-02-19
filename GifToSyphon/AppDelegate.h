@@ -45,33 +45,33 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate, VVCURLDLDelegate, VVGIFPlayerDelegate>   {
 
 	//	thing to disable app nap
-	id	appNapThing;
+	id appNapThing;
 	
 	//	the GIF player object
 	VVGIFPlayer *gifPlayer;
 
 	//	Rendering Engine
-	NSOpenGLContext				*sharedContext;
-	VVThreadLoop				*renderThread;
-	OSSpinLock					lastSourceBufferLock;
-	VVBuffer					*lastSourceBuffer;
-	SyphonServer 				*myServer;
+	NSOpenGLContext *sharedContext;
+	VVThreadLoop *renderThread;
+	OSSpinLock lastSourceBufferLock;
+	VVBuffer *lastSourceBuffer;
+	SyphonServer *myServer;
 
-	VVCURLDL 					*_randomCURL;
+	VVCURLDL *_randomCURL;
 
 	//	interface stuff
-	IBOutlet NSSlider			*timeSlider;
-	IBOutlet NSSlider			*rateSlider;
-	IBOutlet NSSegmentedControl	*loopModeButton;
+	IBOutlet NSSlider *timeSlider;
+	IBOutlet NSSlider *rateSlider;
+	IBOutlet NSSegmentedControl *loopModeButton;
 
-	IBOutlet NSSearchField		*searchField;
-	IBOutlet NSTextField		*openURLTextField;
+	IBOutlet NSSearchField *searchField;
+	IBOutlet NSTextField *openURLTextField;
 
-	IBOutlet NSTextField		*startTimeField;
-	IBOutlet NSTextField		*endTimeField;
-	IBOutlet NSTextField		*currentTimeField;
-	IBOutlet NSTextField		*rateTimeField;
-	IBOutlet VVBufferGLView		*outputView;
+	IBOutlet NSTextField *startTimeField;
+	IBOutlet NSTextField *endTimeField;
+	IBOutlet NSTextField *currentTimeField;
+	IBOutlet NSTextField *rateTimeField;
+	IBOutlet VVBufferGLView *outputView;
 	
 	IBOutlet NSWindow *window;
 	IBOutlet NSPanel *openURLPanel;
