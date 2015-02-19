@@ -5,7 +5,7 @@ The latest release version can be downloaded from here:
 https://github.com/dlublin/GifToSyphon/releases
 
 Read more about how to use GifToSyphon in this blog post:
-<<blog post link>>
+http://vdmx.vidvox.net/blog
 
 GifToSyphon requires Mac OS 10.9.5 or later.
 
@@ -25,6 +25,6 @@ This release version of this project is provided as-is, use at your own risk.
 
 All downloaded GIFs and imagary belong to their original copyright holders. GIF downloading powered by Giphy.
 
-The source code of this project is made available under the terms of the LGPL: http://www.gnu.org/copyleft/lesser.html. Some classes in this project use code from other open-source projects. At present, the third-party code used includes VVOpenSource from Ray Cutler and JSONKit by John Engelhart.
-
 Syphon video sharing on the Mac is an open source project by Bangnoise and Vade, more information here: http://syphon.v002.info/
+
+The source code of this project is made available under the terms of the LGPL: http://www.gnu.org/copyleft/lesser.html. Some classes in this project use code from other open-source projects. At present, the third-party code used includes VVOpenSource from Ray Cutler and JSONKit by John Engelhart.
