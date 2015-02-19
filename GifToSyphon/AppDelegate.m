@@ -414,10 +414,12 @@
 - (void) dlFinished:(id)h	{
 	NSURL *URL = nil;
 	BOOL randomFailed = NO;
+	NSString *responseString = nil;
 	@synchronized (self)	{
 		if (h == _randomCURL)	{
+			randomFailed = YES;
 			NSData *jsonData = [_randomCURL responseData];
-			NSString *responseString = [_randomCURL responseString];
+			responseString = [_randomCURL responseString];
 			if (responseString == nil)	{
 				responseString = @"No response";
 			}
@@ -430,20 +432,9 @@
 						NSString *originalAddress = [jsonDataDict objectForKey:@"image_original_url"];
 						//NSLog(@"\t\t\tabout to download from %@",originalAddress);
 						URL = [NSURL URLWithString:originalAddress];
-					}
-					else	{
-						randomFailed = YES;
-						NSLog(@"\t\tfinished random CURL with response - %@",responseString);
+						randomFailed = NO;
 					}
 				}
-				else	{
-					randomFailed = YES;
-					NSLog(@"\t\tfinished random CURL with response - %@",responseString);
-				}
-			}
-			else	{
-				randomFailed = YES;
-				NSLog(@"\t\tfinished random CURL with response - %@",responseString);
 			}
 		}
 	}
@@ -452,6 +443,9 @@
 		[self performSelectorOnMainThread:@selector(openGIFAtURL:) withObject:URL waitUntilDone:NO];
 	}
 	else if (randomFailed) {
+		if (responseString != nil)	{
+			NSLog(@"\t\tfailed random CURL with response - %@",responseString);
+		}
 		[self performSelectorOnMainThread:@selector(randomButtonUsed:) withObject:URL waitUntilDone:NO];
 	}
 }

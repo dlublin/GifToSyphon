@@ -43,11 +43,8 @@
 
 
 @interface AppDelegate : NSObject <NSApplicationDelegate, VVCURLDLDelegate, VVGIFPlayerDelegate>   {
-
-	//	thing to disable app nap
-	id appNapThing;
 	
-	//	the GIF player object
+	//	GIF player object
 	VVGIFPlayer *gifPlayer;
 
 	//	Rendering Engine
@@ -55,11 +52,14 @@
 	VVThreadLoop *renderThread;
 	OSSpinLock lastSourceBufferLock;
 	VVBuffer *lastSourceBuffer;
+	
+	//	Syphon Server
 	SyphonServer *myServer;
 
+	//	Downloading GIFs
 	VVCURLDL *_randomCURL;
 
-	//	interface stuff
+	//	Interface stuff
 	IBOutlet NSSlider *timeSlider;
 	IBOutlet NSSlider *rateSlider;
 	IBOutlet NSSegmentedControl *loopModeButton;
@@ -76,8 +76,12 @@
 	IBOutlet NSWindow *window;
 	IBOutlet NSPanel *openURLPanel;
 
+	//	Time interface updating variables
 	int timeSliderRedraws;
 	float lastReadTimeInSeconds;
+	
+	//	App nap disable token
+	id appNapThing;
 	
 }
 
