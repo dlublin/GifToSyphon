@@ -14,7 +14,6 @@ GifToSyphon requires Mac OS 10.9.5 or later.
 
 To compile this application yourself you'll also need to check out a copy of VVOpenSource:
 https://github.com/mrRay/vvopensource
-(this is used for the rendering engine and also includes JSONKit)
 
 This code uses a public API key from Giphy – if you're serious about running your own fork of this project you'll want to get in touch with them to get your own private API key that can be placed in the AppController.h defines. For more information on the Giphy API visit their webpage here: https://api.giphy.com/
 
