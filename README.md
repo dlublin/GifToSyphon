@@ -2,7 +2,7 @@
 This is a simple tool for downloading and playsback GIFs from Giphy for remixing in VJ applications that support  Syphon video sharing on the Mac.
 
 The latest release version can be downloaded from here:
-<<download link>>
+https://github.com/dlublin/GifToSyphon/releases
 
 Read more about how to use GifToSyphon in this blog post:
 <<blog post link>>
