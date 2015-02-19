@@ -26,4 +26,4 @@ All downloaded GIFs and imagary belong to their original copyright holders. GIF 
 
 Syphon video sharing on the Mac is an open source project by Bangnoise and Vade, more information here: http://syphon.v002.info/
 
-The source code of this project is made available under the terms of the LGPL: http://www.gnu.org/copyleft/lesser.html. Some classes in this project use code from other open-source projects. At present, the third-party code used includes VVOpenSource from Ray Cutler and JSONKit by John Engelhart.
+The source code of this project is licensed under a Free BSD License (https://www.freebsd.org/copyright/freebsd-license.html), meaning you can use it in your commercial or noncommercial applications free of charge. Some classes in this project use code from other open-source projects. At present, the third-party code used includes VVOpenSource from Ray Cutler and JSONKit by John Engelhart.
