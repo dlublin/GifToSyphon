@@ -7,6 +7,8 @@ The latest release version can be downloaded from here:
 Read more about how to use GifToSyphon in this blog post:
 <<blog post link>>
 
+GifToSyphon requires Mac OS 10.9.5 or later.
+
 
 #Compiling your own version
 
