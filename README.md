@@ -22,7 +22,7 @@ This code uses a public API key from Giphy – if you're serious about running y
 
 This release version of this project is provided as-is, use at your own risk.
 
-All downloaded GIFs and imagary belong to their original copyright holders. GIF downloading powered by Giphy.
+All downloaded GIFs and imagery belong to their original copyright holders. GIF downloading powered by Giphy.
 
 Syphon video sharing on the Mac is an open source project by Bangnoise and Vade, more information here: http://syphon.v002.info/
 
