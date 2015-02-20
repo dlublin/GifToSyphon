@@ -5,7 +5,7 @@ The latest release version can be downloaded from here:
 https://github.com/dlublin/GifToSyphon/releases
 
 Read more about how to use GifToSyphon in this blog post:
-http://vdmx.vidvox.net/blog
+http://vdmx.vidvox.net/blog/giftosyphon
 
 GifToSyphon requires Mac OS 10.9.5 or later.
 
@@ -24,7 +24,7 @@ This code uses a public API key from Giphy – if you're serious about running y
 
 The GIF playback code section is broken up into three objects:
 - VVGIFFrame: Wrapper for a single GIF frame.
-- VVGIFPlayerItem: Representation of an entire animated GIF file. Maintains an array of VVGIFFrames.
+- VVGIFPlayerItem: Representation of an animated GIF file. Maintains an array of VVGIFFrames.
 - VVGIFPlayer: Playback controller for animated GIF files.
 
 In the AppController you'll find the code for:
