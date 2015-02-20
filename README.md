@@ -4,7 +4,7 @@ This is a simple tool for downloading and playing back animated GIFs from Giphy 
 The latest release version can be downloaded from here:
 https://github.com/dlublin/GifToSyphon/releases
 
-Read more about how to use GifToSyphon in this blog post:
+You can read more about how to use GifToSyphon in this blog post:
 http://vdmx.vidvox.net/blog/giftosyphon
 
 GifToSyphon requires Mac OS 10.9.5 or later.
