@@ -136,7 +136,7 @@
 	NSNumber *tmpNum = nil;
 	
 	//	figure out the frame count
-	int	frameCount = 0;
+	int frameCount = 0;
 	
 	tmpNum = [_gifRep valueForProperty:@"NSImageFrameCount"];
 	if (tmpNum != nil)
@@ -147,7 +147,7 @@
 	//NSLog(@"\t\tabout to load %d frames for GIF", frameCount);
 	
 	//	now read each frame out as a bitmap image and put it in the array
-	for(int i=0; i<frameCount; i++ ){
+	for (int i=0; i<frameCount; i++ ){
 		//	advance to the specified frame #
 		[_gifRep setProperty:NSImageCurrentFrame withValue:[NSNumber numberWithUnsignedInt:i]];
 		//	figure out how long long this frame is supposed to play for
@@ -159,7 +159,7 @@
 	
 		//	if we're preloading the frames, make a copy that gets stored here
 		//	otherwise only preload the first frame and the frames will get pulled on the fly
-		if ((cacheAllFrames)||(i==0))	{
+		if ((cacheAllFrames) || (i == 0))	{
 			NSData *repData = [_gifRep representationUsingType:NSGIFFileType properties:nil];
 			frameRep = [NSBitmapImageRep imageRepWithData:repData];
 		}
@@ -213,7 +213,7 @@
 		[self doPreload];
 	}
 	
-    long frameIndex = 0;
+	long frameIndex = 0;
     
 	[_framesArray rdlock];
 	
@@ -243,7 +243,7 @@
 	
 	//	if this frame has a nil image rep because we didn't preload we'll actually want to load it up now
 	//	attach it to the returned frame and it'll be cached for the next loop
-	if ((returnMe != nil)&&([returnMe imageRep] == nil)&&(_gifRep != nil))	{
+	if ((returnMe != nil) && ([returnMe imageRep] == nil) && (_gifRep != nil))	{
 		[_gifRep setProperty:NSImageCurrentFrame withValue:[NSNumber numberWithLong:frameIndex]];
 		NSData *repData = [_gifRep representationUsingType:NSGIFFileType properties:nil];
 		NSBitmapImageRep *frameRep = [NSBitmapImageRep imageRepWithData:repData];

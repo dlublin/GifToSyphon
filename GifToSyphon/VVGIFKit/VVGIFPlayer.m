@@ -81,11 +81,11 @@
 	}
 
 	//	compare the new current time to the end and start times to see if we need to do a loop action
-	if ((localRate > 0.)&&(CMTimeCompare(currentTime, endTime) != -1))	{
+	if ((localRate > 0.) && (CMTimeCompare(currentTime, endTime) != -1))	{
 		//NSLog(@"\t\treached end of movie");
 		didReachEnd = YES;
 	}
-	else if ((localRate < 0.)&&(CMTimeCompare(currentTime, startTime) != 1))	{
+	else if ((localRate < 0.) && (CMTimeCompare(currentTime, startTime) != 1))	{
 		//NSLog(@"\t\treached start of movie");
 		didReachStart = YES;
 	}
@@ -153,7 +153,7 @@
 	if ((didReachEnd)||(didReachStart))	{
 		id d = [self delegate];
 		if (!_reachedEnd)	{
-			if ((d!=nil)&&([(id)d conformsToProtocol:@protocol(VVGIFPlayerDelegate)]))	{
+			if ((d != nil) && ([(id)d conformsToProtocol:@protocol(VVGIFPlayerDelegate)]))	{
 				[d playerDidReachEnd:self];
 			}
 		}

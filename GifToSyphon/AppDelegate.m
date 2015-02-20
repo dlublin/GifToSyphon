@@ -23,7 +23,7 @@
 	NSLog(@"%s",__func__);
 	//	create the shared context and a buffer pool, set them up
 	sharedContext = [[NSOpenGLContext alloc] initWithFormat:[GLScene defaultPixelFormat] shareContext:nil];
-	VVBufferPool		*bp = [[VVBufferPool alloc] initWithSharedContext:sharedContext pixelFormat:[GLScene defaultPixelFormat] sized:NSMakeSize(640,480)];
+	VVBufferPool *bp = [[VVBufferPool alloc] initWithSharedContext:sharedContext pixelFormat:[GLScene defaultPixelFormat] sized:NSMakeSize(640,480)];
 	[VVBufferPool setGlobalVVBufferPool:bp];
 	[VVBufferCopier createGlobalVVBufferCopierWithSharedContext:sharedContext];
 
@@ -222,9 +222,9 @@
 
 - (void) openDocument:(id)sender	{
 	//NSLog(@"%s ... %@",__func__,sender);
-	NSOpenPanel		*openPanel = [[NSOpenPanel openPanel] retain];
-	NSUserDefaults	*def = [NSUserDefaults standardUserDefaults];
-	NSString		*openPanelDir = [def objectForKey:@"openPanelDir"];
+	NSOpenPanel *openPanel = [[NSOpenPanel openPanel] retain];
+	NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+	NSString *openPanelDir = [def objectForKey:@"openPanelDir"];
 	if (openPanelDir==nil)
 		openPanelDir = [@"~/" stringByExpandingTildeInPath];
 	[openPanel setDirectoryURL:[NSURL fileURLWithPath:openPanelDir]];
@@ -232,9 +232,9 @@
 	[openPanel
 		beginSheetModalForWindow:window
 		completionHandler:^(NSInteger result)	{
-			NSString		*path = (result!=NSFileHandlingPanelOKButton) ? nil : [[openPanel URL] path];
+			NSString *path = (result!=NSFileHandlingPanelOKButton) ? nil : [[openPanel URL] path];
 			if (path != nil)	{
-				NSUserDefaults		*def = [NSUserDefaults standardUserDefaults];
+				NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
 				[def setObject:[path stringByDeletingLastPathComponent] forKey:@"openPanelDir"];
 				[def synchronize];
 			}
@@ -333,7 +333,7 @@
 	//	replace this with your own in production code if you don't want rate limits
 	
 	//	note that the term can be nil, just do a search all
-	if ((term == nil)||([term length] < 1))	{
+	if ((term == nil) || ([term length] < 1))	{
 		searchAddress = [NSString stringWithFormat:@"https://api.giphy.com/v1/gifs/random?api_key=%@",GIFToSyphonGiphyAPIKey];
 	}
 	else	{
@@ -428,7 +428,7 @@
 				if ([jsonObject isKindOfClass:[NSDictionary class]])	{
 					//NSLog(@"\t\t\t%@",jsonObject);
 					NSDictionary *jsonDataDict = [jsonObject objectForKey:@"data"];
-					if ((jsonDataDict != nil)&&([jsonDataDict isKindOfClass:[NSDictionary class]]))	{
+					if ((jsonDataDict != nil) && ([jsonDataDict isKindOfClass:[NSDictionary class]]))	{
 						NSString *originalAddress = [jsonDataDict objectForKey:@"image_original_url"];
 						//NSLog(@"\t\t\tabout to download from %@",originalAddress);
 						URL = [NSURL URLWithString:originalAddress];
@@ -459,9 +459,9 @@
 - (void)_renderCallback	{
 	//NSLog(@"%s",__func__);
 	//	get a frame from from the gifPlayer
-	VVBuffer			*tmpBuffer = nil;
-	float				newTime = -1.0;
-	float				newTimeNormalized = -1.0;
+	VVBuffer *tmpBuffer = nil;
+	float newTime = -1.0;
+	float newTimeNormalized = -1.0;
 	
 	//	check to see if there is a GIF player and if it has a new frame get it
 	@synchronized (self)	{
@@ -516,8 +516,8 @@
 }
 
 - (void)_updateTime	{
-	float				newTime = -1.0;
-	float				newTimeNormalized = -1.0;
+	float newTime = -1.0;
+	float newTimeNormalized = -1.0;
 	
 	//	get the time from the GIF player and then display it if the window is visible
 	@synchronized (self)	{
