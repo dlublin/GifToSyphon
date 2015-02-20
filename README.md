@@ -9,6 +9,9 @@ http://vdmx.vidvox.net/blog/giftosyphon
 
 GifToSyphon requires Mac OS 10.9.5 or later.
 
+Screenshot: 
+![alt text](https://github.com/dlublin/GifToSyphon/blob/master/GifToSyphon/Screenshots/GifToSyphonScreenshot.png "GifToSyphon Screenshot")
+
 
 #History
 
