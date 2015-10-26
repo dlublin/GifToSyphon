@@ -26,6 +26,7 @@
 		469370FB1A9665B700C86B4C /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469370FA1A9665B700C86B4C /* Syphon.framework */; };
 		469370FC1A9665CC00C86B4C /* Syphon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 469370FA1A9665B700C86B4C /* Syphon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DD64B17F1BDEB77C001165AD /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DD64B17E1BDEB77C001165AD /* JSONKit.m */; };
+		DDDE5F021BDEBE0D00433DD7 /* VVBufferGLView+Dragging.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDE5F011BDEBE0D00433DD7 /* VVBufferGLView+Dragging.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -246,6 +247,9 @@
 		469370FA1A9665B700C86B4C /* Syphon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Syphon.framework; path = Frameworks/Syphon.framework; sourceTree = "<group>"; };
 		DD64B17D1BDEB77C001165AD /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		DD64B17E1BDEB77C001165AD /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		DDDE5F001BDEBE0D00433DD7 /* VVBufferGLView+Dragging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VVBufferGLView+Dragging.h"; sourceTree = "<group>"; };
+		DDDE5F011BDEBE0D00433DD7 /* VVBufferGLView+Dragging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VVBufferGLView+Dragging.m"; sourceTree = "<group>"; };
+		DDDE5F031BDEC49B00433DD7 /* DraggingDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DraggingDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +308,9 @@
 				460687061A8A82A8000EAAD2 /* Supporting Files */,
 				469370FA1A9665B700C86B4C /* Syphon.framework */,
 				460687961A8A86F7000EAAD2 /* AVFoundation.framework */,
+				DDDE5F001BDEBE0D00433DD7 /* VVBufferGLView+Dragging.h */,
+				DDDE5F011BDEBE0D00433DD7 /* VVBufferGLView+Dragging.m */,
+				DDDE5F031BDEC49B00433DD7 /* DraggingDelegate.h */,
 			);
 			path = GifToSyphon;
 			sourceTree = "<group>";
@@ -664,6 +671,7 @@
 				DD64B17F1BDEB77C001165AD /* JSONKit.m in Sources */,
 				4606870A1A8A82A8000EAAD2 /* AppDelegate.m in Sources */,
 				4606879A1A8A8721000EAAD2 /* VVGIFPlayerItem.m in Sources */,
+				DDDE5F021BDEBE0D00433DD7 /* VVBufferGLView+Dragging.m in Sources */,
 				4606872C1A8A8487000EAAD2 /* VVGIFPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
