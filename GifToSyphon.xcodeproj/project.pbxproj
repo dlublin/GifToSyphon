@@ -20,13 +20,12 @@
 		460687C51A8AE49D000EAAD2 /* VVGIFFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 460687C41A8AE49D000EAAD2 /* VVGIFFrame.m */; };
 		460687CC1A8AF81C000EAAD2 /* VVBufferPool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460687501A8A86AD000EAAD2 /* VVBufferPool.framework */; };
 		460687CD1A8AF823000EAAD2 /* VVBufferPool.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 460687501A8A86AD000EAAD2 /* VVBufferPool.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		468FE2FF1A8B264300448F83 /* JSONKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 460687541A8A86AD000EAAD2 /* JSONKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		468FE3001A8B264600448F83 /* JSONKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460687541A8A86AD000EAAD2 /* JSONKit.framework */; };
 		468FE3071A8B4A1E00448F83 /* Poweredby_100px-White_VertText.png in Resources */ = {isa = PBXBuildFile; fileRef = 468FE3061A8B4A1E00448F83 /* Poweredby_100px-White_VertText.png */; };
 		468FE3291A8BFD6500448F83 /* Default.gif in Resources */ = {isa = PBXBuildFile; fileRef = 468FE3281A8BFD6500448F83 /* Default.gif */; };
 		468FE32E1A8BFEFD00448F83 /* GifToSyphon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 468FE32D1A8BFEFD00448F83 /* GifToSyphon.icns */; };
 		469370FB1A9665B700C86B4C /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469370FA1A9665B700C86B4C /* Syphon.framework */; };
 		469370FC1A9665CC00C86B4C /* Syphon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 469370FA1A9665B700C86B4C /* Syphon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD64B17F1BDEB77C001165AD /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DD64B17E1BDEB77C001165AD /* JSONKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,13 +56,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 96C8071219817BFE00FA7825;
 			remoteInfo = DDMathParser;
-		};
-		460687531A8A86AD000EAAD2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 460687311A8A86AD000EAAD2 /* VVOpenSource.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 96C8072619817C0A00FA7825;
-			remoteInfo = JSONKit;
 		};
 		460687551A8A86AD000EAAD2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -191,6 +183,27 @@
 			remoteGlobalIDString = 96140109198AD46D00335292;
 			remoteInfo = "QT and Hap Test App";
 		};
+		DD64B19B1BDEB77C001165AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 460687311A8A86AD000EAAD2 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1A7128AF1B61065000528CDB;
+			remoteInfo = MultiClassXPC;
+		};
+		DD64B19D1BDEB77C001165AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 460687311A8A86AD000EAAD2 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1A7128D41B610B4700528CDB;
+			remoteInfo = MultiClassXPCTestApp;
+		};
+		DD64B19F1BDEB77C001165AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 460687311A8A86AD000EAAD2 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1A7128F81B610B6F00528CDB;
+			remoteInfo = MultiClassXPCTestService;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -201,7 +214,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				469370FC1A9665CC00C86B4C /* Syphon.framework in CopyFiles */,
-				468FE2FF1A8B264300448F83 /* JSONKit.framework in CopyFiles */,
 				460687CD1A8AF823000EAAD2 /* VVBufferPool.framework in CopyFiles */,
 				460687951A8A86EA000EAAD2 /* VVBasics.framework in CopyFiles */,
 			);
@@ -232,6 +244,8 @@
 		468FE3281A8BFD6500448F83 /* Default.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Default.gif; sourceTree = "<group>"; };
 		468FE32D1A8BFEFD00448F83 /* GifToSyphon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = GifToSyphon.icns; sourceTree = "<group>"; };
 		469370FA1A9665B700C86B4C /* Syphon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Syphon.framework; path = Frameworks/Syphon.framework; sourceTree = "<group>"; };
+		DD64B17D1BDEB77C001165AD /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		DD64B17E1BDEB77C001165AD /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,7 +253,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				468FE3001A8B264600448F83 /* JSONKit.framework in Frameworks */,
 				460687971A8A86F7000EAAD2 /* AVFoundation.framework in Frameworks */,
 				460687CC1A8AF81C000EAAD2 /* VVBufferPool.framework in Frameworks */,
 				469370FB1A9665B700C86B4C /* Syphon.framework in Frameworks */,
@@ -285,6 +298,8 @@
 				4606870F1A8A82A8000EAAD2 /* MainMenu.xib */,
 				468FE32D1A8BFEFD00448F83 /* GifToSyphon.icns */,
 				468FE3281A8BFD6500448F83 /* Default.gif */,
+				DD64B17D1BDEB77C001165AD /* JSONKit.h */,
+				DD64B17E1BDEB77C001165AD /* JSONKit.m */,
 				460687BB1A8A8976000EAAD2 /* VVGIFKit */,
 				460687061A8A82A8000EAAD2 /* Supporting Files */,
 				469370FA1A9665B700C86B4C /* Syphon.framework */,
@@ -325,11 +340,11 @@
 				4606874E1A8A86AD000EAAD2 /* VVBasics.framework */,
 				460687501A8A86AD000EAAD2 /* VVBufferPool.framework */,
 				460687521A8A86AD000EAAD2 /* DDMathParser.framework */,
-				460687541A8A86AD000EAAD2 /* JSONKit.framework */,
 				460687561A8A86AD000EAAD2 /* VVISFKit.framework */,
 				460687581A8A86AD000EAAD2 /* VVUIToolbox.framework */,
 				4606875A1A8A86AD000EAAD2 /* VVMIDI.framework */,
 				4606875C1A8A86AD000EAAD2 /* VVOSC.framework */,
+				DD64B19C1BDEB77C001165AD /* MultiClassXPC.framework */,
 				4606875E1A8A86AD000EAAD2 /* CrashReporterTestApp.app */,
 				460687601A8A86AD000EAAD2 /* MIDITestApp.app */,
 				460687621A8A86AD000EAAD2 /* OSCTestApp.app */,
@@ -344,6 +359,8 @@
 				460687741A8A86AD000EAAD2 /* CIGLScene Test App.app */,
 				460687761A8A86AD000EAAD2 /* ISFGLScene Test App.app */,
 				460687781A8A86AD000EAAD2 /* QT and Hap Test App.app */,
+				DD64B19E1BDEB77C001165AD /* MultiClassXPCTestApp.app */,
+				DD64B1A01BDEB77C001165AD /* MultiClassXPCTestService.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -464,13 +481,6 @@
 			fileType = wrapper.framework;
 			path = DDMathParser.framework;
 			remoteRef = 460687511A8A86AD000EAAD2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		460687541A8A86AD000EAAD2 /* JSONKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = JSONKit.framework;
-			remoteRef = 460687531A8A86AD000EAAD2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		460687561A8A86AD000EAAD2 /* VVISFKit.framework */ = {
@@ -599,6 +609,27 @@
 			remoteRef = 460687771A8A86AD000EAAD2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		DD64B19C1BDEB77C001165AD /* MultiClassXPC.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MultiClassXPC.framework;
+			remoteRef = DD64B19B1BDEB77C001165AD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD64B19E1BDEB77C001165AD /* MultiClassXPCTestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = MultiClassXPCTestApp.app;
+			remoteRef = DD64B19D1BDEB77C001165AD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD64B1A01BDEB77C001165AD /* MultiClassXPCTestService.xpc */ = {
+			isa = PBXReferenceProxy;
+			fileType = "wrapper.xpc-service";
+			path = MultiClassXPCTestService.xpc;
+			remoteRef = DD64B19F1BDEB77C001165AD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -630,6 +661,7 @@
 			files = (
 				460687C51A8AE49D000EAAD2 /* VVGIFFrame.m in Sources */,
 				4606870C1A8A82A8000EAAD2 /* main.m in Sources */,
+				DD64B17F1BDEB77C001165AD /* JSONKit.m in Sources */,
 				4606870A1A8A82A8000EAAD2 /* AppDelegate.m in Sources */,
 				4606879A1A8A8721000EAAD2 /* VVGIFPlayerItem.m in Sources */,
 				4606872C1A8A8487000EAAD2 /* VVGIFPlayer.m in Sources */,

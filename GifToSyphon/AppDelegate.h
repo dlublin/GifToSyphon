@@ -11,7 +11,7 @@
 #import <VVBasics/VVBasics.h>
 #import <VVBufferPool/VVBufferPool.h>
 #import <Syphon/Syphon.h>
-#import <JSONKit/JSONKit.h>
+#import "JSONKit.h"
 #import "VVGIFPlayer.h"
 
 
