@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "VVBufferGLView+Dragging.h"
 
 @implementation AppDelegate
 
@@ -55,6 +55,10 @@
 	if (gifPlayer == nil)	{
 		[self openGIFAtPath: defaultGIFPath];
 	}
+    
+    // register for dragging
+    [outputView registerForDraggedTypes:@[NSFilenamesPboardType]];
+    [outputView setDragDelegate:self];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -561,5 +565,12 @@
 	}
 }
 
+/*===================================================================================*/
+#pragma mark --------------------- Dragging
+/*------------------------------------*/
 
+-(void)fileWasDraggedWithPath:(NSString *)filePath
+{
+    [self openGIFAtPath:filePath];
+}
 @end

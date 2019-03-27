@@ -11,9 +11,9 @@
 #import <VVBasics/VVBasics.h>
 #import <VVBufferPool/VVBufferPool.h>
 #import <Syphon/Syphon.h>
-#import <JSONKit/JSONKit.h>
+#import "JSONKit.h"
 #import "VVGIFPlayer.h"
-
+#import "DraggingDelegate.h"
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-@interface AppDelegate : NSObject <NSApplicationDelegate, VVCURLDLDelegate, VVGIFPlayerDelegate>   {
+@interface AppDelegate : NSObject <NSApplicationDelegate, VVCURLDLDelegate, VVGIFPlayerDelegate, DraggingDelegate>   {
 	
 	//	GIF player object
 	VVGIFPlayer *gifPlayer;
